@@ -1,0 +1,5 @@
+indexdir/
+__pycache__
+*.pyc
+*~
+*.log
