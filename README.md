@@ -8,3 +8,10 @@
 
 ## 02. Обработка строк
 
+![img](02_string_processing/broken_bibliography.jpg)
+
+## 03. Элементы теории информации
+
+
+
+
