@@ -27,3 +27,4 @@
 ![img](05_distributional_semantics/pushkins_red_apple.png)
 
 
+## ???
