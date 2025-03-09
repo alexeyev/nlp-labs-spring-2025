@@ -6,13 +6,25 @@
 
 ## 01. Информационный поиск
 
-![img](01_information_retrieval/dummy_engine.jpg)
+![img](01_information_retrieval/dummy_engine.jpg){:width="50%"}
 
 ## 02. Обработка строк
 
-![img](02_string_processing/broken_bibliography.jpg)
+![img](02_string_processing/broken_bibliography.jpg){:width="50%"}
 
 ## 03. Элементы теории информации
+
+
+![img](03_information_theory/bad_collocations.png){:width="50%"}
+
+
+## 04. N-граммные языковые модели
+
+[ПРОПУСК]
+
+## 05. Векторная семантика
+
+![img](05_distributional_semantics/pushkins_red_apple.png){:width="50%"}
 
 
 

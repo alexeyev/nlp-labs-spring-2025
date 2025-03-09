@@ -19,7 +19,6 @@ from tqdm import tqdm
         из неменяющегося массива текстов.
 """
 
-
 if __name__ == "__main__":
 
     if not os.path.exists("sentences.txt"):
@@ -68,7 +67,7 @@ if __name__ == "__main__":
     # The additional factors of p (x,y) inside the logarithm are intended
     #   to correct the bias of PMI towards low-frequency events,
     #   by boosting the scores of frequent pairs.
-    k = 4
+    k = 1
 
     for (a, b), count in bigram_counter.items():
         # логарифмированный числитель: p(x, y)
