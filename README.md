@@ -28,3 +28,6 @@
 
 
 ## ???
+
+
+[Ссылка на ноутбук](https://colab.research.google.com/drive/1XxH2ydrAz4WcE9kxBhAt6KXjPnLwmymR?usp=sharing) (очень неудобно)
