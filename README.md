@@ -27,6 +27,11 @@
 ![img](05_distributional_semantics/pushkins_red_apple.png)
 
 
+## 06. Разметка последовательностей
+
+![img](06_sequence_tagging/art_vs_artist.jpg)
+
+
 ## ???
 
 
