@@ -29,15 +29,15 @@ def main():
         min_count=10,
         sg=1,
         workers=num_workers,
-        epochs=10
+        epochs=100
     )
 
-    model.save("word2vec.bin")
+    model.save("word2vec100e.bin")
 
 
 if __name__ == '__main__':
-    if os.path.exists("word2vec.bin"):
-        emb_model = Word2Vec.load("word2vec.bin")
+    if os.path.exists("word2vec100e.bin"):
+        emb_model = Word2Vec.load("word2vec100e.bin")
         print(emb_model.wv.most_similar(positive=["album"]))
         print(emb_model.wv.most_similar(positive=["song"]))
         print(emb_model.wv.most_similar(positive=["other"]))

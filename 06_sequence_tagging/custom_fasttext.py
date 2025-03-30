@@ -6,9 +6,9 @@ from gensim.models.fasttext import FastTextKeyedVectors, load_facebook_vectors
 
 unsupervised_default = {
     'model': "skipgram",
-    'dim': 100,
+    'dim': 50,
     'ws': 5,
-    'epoch': 5,
+    'epoch': 100,
     'minCount': 10,
     'minn': 3,
     'maxn': 6,
@@ -31,4 +31,4 @@ if any([f.startswith("fasttext-custom") for f in os.listdir()]):
     quit()
 
 model = fasttext.train_unsupervised("tmp-train.txt", **unsupervised_default)
-model.save_model("fasttext-custom.bin")
+model.save_model("fasttext-custom100e.bin")

@@ -15,9 +15,13 @@ if __name__ == "__main__":
 
     with open("tmp-train.txt", "w", encoding="utf-8") as wf:
         for review in tqdm(reviews, "reviews"):
-            if review is None or not review.strip():
+            review = review.strip()
+
+            if review is None or not review:
                 continue
+
             sentences = sent_tokenize(review, language="english")
+
             for sentence in sentences:
                 toks = [w for w in word_tokenize(sentence.lower()) if str.isalpha(w)]
                 wf.write(" ".join(toks) + "\n")
