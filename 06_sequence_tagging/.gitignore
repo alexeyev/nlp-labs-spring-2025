@@ -1,0 +1,11 @@
+music-ner-eacl2023
+output
+__pycache__
+*.bz
+*.gz
+*.conll
+*.log
+*.pyc
+*.crf
+fasttext-en-mini
+fasttext*.bin
