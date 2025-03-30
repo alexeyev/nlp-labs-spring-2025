@@ -15,6 +15,15 @@ if __name__ == "__main__":
             logging.FileHandler('logs/eval.log', mode='a', encoding='utf-8')
         ]
     )
+    """
+      Examples:
+        >>> from seqeval.metrics import classification_report
+        >>> y_true = [['O', 'O', 'O', 'B-MISC', 'I-MISC', 'I-MISC', 'O'], 
+                      ['B-PER', 'I-PER', 'O']]
+        >>> y_pred = [['O', 'O', 'B-MISC', 'I-MISC', 'I-MISC', 'I-MISC', 'O'], 
+                      ['B-PER', 'I-PER', 'O']]
+        >>> print(classification_report(y_true, y_pred))
+    """
 
     gold_path = "data/test.conll"
     y_true = [[l for t, l in sent] for sent in utils.read_data(gold_path)]
