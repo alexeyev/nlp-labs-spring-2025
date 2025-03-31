@@ -1,4 +1,3 @@
-import multiprocessing
 import os
 
 import fasttext
@@ -15,20 +14,20 @@ unsupervised_default = {
     'neg': 5,
     'wordNgrams': 1,
     'loss': "ns",
-    'thread': 2,
+    'thread': 7,
     'lrUpdateRate': 100000,
     'verbose': 2,
 }
 
-if any([f.startswith("fasttext-custom") for f in os.listdir()]):
-    ft: FastTextKeyedVectors = load_facebook_vectors("fasttext-custom100e.bin")
-    print("Please:", ft.most_similar(positive=["please"]))
-    print("Other:", ft.most_similar(positive=["other"]))
-    print("Aphex:", ft.most_similar(positive=["aphex"]))
-    print("Album:", ft.most_similar(positive=["album"]))
-    print("Song:", ft.most_similar(positive=["song"]))
-    print("Band:", ft.most_similar(positive=["band"]))
-    quit()
+# if any([f.startswith("fasttext-custom") for f in os.listdir()]):
+#     ft: FastTextKeyedVectors = load_facebook_vectors("fasttext-custom100e.bin")
+#     print("Please:", ft.most_similar(positive=["please"]))
+#     print("Other:", ft.most_similar(positive=["other"]))
+#     print("Aphex:", ft.most_similar(positive=["aphex"]))
+#     print("Album:", ft.most_similar(positive=["album"]))
+#     print("Song:", ft.most_similar(positive=["song"]))
+#     print("Band:", ft.most_similar(positive=["band"]))
+#     quit()
 
 model = fasttext.train_unsupervised("tmp-train.txt", **unsupervised_default)
 model.save_model("fasttext-custom100e.bin")

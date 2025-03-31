@@ -7,5 +7,7 @@ __pycache__
 *.pyc
 *.crf
 *.json
+*.bin
+*.txt
 fasttext-en-mini
 fasttext*.bin
