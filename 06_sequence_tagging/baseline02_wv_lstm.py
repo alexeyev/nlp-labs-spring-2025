@@ -48,7 +48,7 @@ if __name__ == "__main__":
     LEARNING_RATE = 0.1
     EPOCHS = 30
     LAYERS = 1
-    IS_FASTTEXT = False
+    IS_FASTTEXT = True
 
     if not IS_FASTTEXT:
         emb_model = Word2Vec.load("word2vec100e.bin").wv
